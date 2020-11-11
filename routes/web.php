@@ -18,6 +18,7 @@ Route::get('/', function () {
     Post::create([
         'title'=>'test title',
         'content'=>'test content',
+        'age'=>'test age'
     ]);
 });
 
