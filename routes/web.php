@@ -27,8 +27,11 @@ Route::get('/', function () {
 //    $post->age='test age';
 //    $post->save();
 
-    $posts=Post::all();
-    dd($posts);
+//    $posts=Post::all();
+//    dd($posts);
+
+    $post=Post::find(1);
+    dd($post);
 
 });
 
