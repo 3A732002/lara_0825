@@ -36,12 +36,19 @@ Route::get('/', function () {
 //    $posts=Post::where('id','<',10)->orderBy('id','DESC')->get();
 //    dd($posts);
 
-    $post=Post::find(1);
-    $post->update([
-        'title'=>'updated title',
-        'content'=>'updated content',
-        'age'=>'updated age'
-    ]);
+//    $post=Post::find(1);
+//    $post->update([
+//        'title'=>'updated title',
+//        'content'=>'updated content',
+//        'age'=>'updated age'
+//    ]);
+
+    $post=Post::find(2);
+    $post->title='saved title';
+    $post->content='saved content';
+    $post->age='saved age';
+    $post->save();
+
 
 
 
