@@ -43,13 +43,14 @@ Route::get('/', function () {
 //        'age'=>'updated age'
 //    ]);
 
-    $post=Post::find(2);
-    $post->title='saved title';
-    $post->content='saved content';
-    $post->age='saved age';
-    $post->save();
+//    $post=Post::find(2);
+//    $post->title='saved title';
+//    $post->content='saved content';
+//    $post->age='saved age';
+//    $post->save();
 
-
+    $post=Post::find(1);
+    $post->delete();
 
 
 });
