@@ -15,11 +15,16 @@ use App\Models\Post;
 */
 
 Route::get('/', function () {
-    Post::create([
-        'title'=>'test title',
-        'content'=>'test content',
-        'age'=>'test age'
-    ]);
+//    Post::create([
+//        'title'=>'test title',
+//        'content'=>'test content',
+//        'age'=>'test age'
+//    ]);
+    $post = new Post();
+    $post->title='test title';
+    $post->content='test content';
+    $post->age='test age';
+    $post->save();
 });
 
 Route::get('/posts',[PostsController::class,'index'])->name('posts.index');
